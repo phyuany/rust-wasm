@@ -35,13 +35,15 @@ like so: `http://localhost:8080` on .env file of the webapp root.
 To run the webservice, you can run:
 
 ```sh
-cargo run --bin webservice
+cd webservice
+cargo run
 ```
 
 Now you can open another terminal and run the webapp. To run the webapp, you can run:
 
 ```sh
-cargo run --bin webapp
+cd webapp
+cargo run
 ```
 
 ## Running WebAssembly
@@ -55,14 +57,14 @@ cargo install wasm-pack
 Then, you can run the following commands:
 
 ```sh
-cd wasm-pack
+cd wasm-client
 wasm-pack build
 ```
 
 install the npm dependencies:
 
 ```sh
-cd www
+cd wasm-client/www
 npm install
 ```
 
@@ -81,7 +83,7 @@ cargo build --release --bin webservice
 cargo build --release --bin webapp
 ```
 
-Build WebAssembly:
+Build WebAssembly app:
 
 ```sh
 # generate WebAssembly package

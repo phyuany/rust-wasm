@@ -34,13 +34,15 @@ docker-compose up -d
 要运行 webservice，你可以运行：
 
 ```sh
-cargo run --bin webservice
+cd webservice
+cargo run
 ```
 
 现在你可以打开另一个终端并运行 webapp。要运行 webapp，你可以运行：
 
 ```sh
-cargo run --bin webapp
+cd webapp
+cargo run
 ```
 
 ## 运行 WebAssembly
@@ -54,14 +56,14 @@ cargo install wasm-pack
 然后，你可以运行以下命令：
 
 ```sh
-cd wasm-pack
+cd wasm-client
 wasm-pack build
 ```
 
 安装 npm 依赖：
 
 ```sh
-cd www
+cd wasm-client/www
 npm install
 ```
 
@@ -80,7 +82,7 @@ cargo build --bin webservice
 cargo build --bin webapp
 ```
 
-构建 WebAssembly：
+构建 WebAssembly 应用：
 
 ```sh
 cd wasm-pack
