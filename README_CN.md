@@ -67,7 +67,7 @@ cd wasm-client/www
 npm install
 ```
 
-运行 webapp：
+运行 WebAssembly 应用：
 
 ```sh
 npm run start

@@ -68,7 +68,7 @@ cd wasm-client/www
 npm install
 ```
 
-run the webapp:
+run the WebAssembly app:
 
 ```sh
 npm run start
